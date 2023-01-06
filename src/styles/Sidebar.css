@@ -1,0 +1,24 @@
+.sidebar-component {
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+
+.border-bottom-div {
+  width: 14rem;
+  border-bottom: 1px solid #181D31;
+}
+
+.icon-div:hover .border-bottom-div {
+  transition-property: width;
+  width: 2rem;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
+.icon-div:not(:hover) .border-bottom-div {
+  transition-property: width;
+  width: 14rem;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}

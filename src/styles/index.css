@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl underline font-sans;
+  }
+}
+
+@layer components {
+  .menu-item {
+    @apply text-2xl font-sans py-6; 
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10%;
+  background: #191919; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  background: #ffffff; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

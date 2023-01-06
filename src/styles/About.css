@@ -1,0 +1,13 @@
+.about-accordion {
+  height: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.active-accordion {
+  transition-property: height;
+  /* height: 12vw; */
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms; 
+}
+
