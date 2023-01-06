@@ -1,8 +1,12 @@
-import React from 'react'
+import { RefObject } from 'react';
 
-const Contact = () => {
+interface ContactProps {
+  contactRef?: RefObject<HTMLDivElement>
+}
+
+const Contact = ({ contactRef }: ContactProps) => {
   return (
-    <div className="bg-white h-screen pt-20 pl-10 md:pl-20 pr-10 md:pr-20">
+    <div className="bg-white h-screen pt-20 pl-10 md:pl-20 pr-10 md:pr-20" id="contact-page" ref={contactRef}>
       <p className="text-7xl text-center">Contact Me</p>
       <p className="text-center">Let's work together or drop me a message and say hello</p>
       <div className="pt-10 flex flex-col md:flex-row justify-center">

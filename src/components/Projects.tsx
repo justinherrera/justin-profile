@@ -1,9 +1,14 @@
 import React from 'react'
+import { RefObject } from 'react';
 import mj_src from '../assets/project_1.png'
 
-const Projects = () => {
+interface ProjectsProps {
+  projectsRef: RefObject<HTMLDivElement>
+}
+
+const Projects = ({ projectsRef }: ProjectsProps) => {
   return (
-    <div className="bg-[#191919] h-auto md:h-screen w-[100vw]">
+    <div className="bg-[#191919] h-auto md:h-screen w-[100vw]" id="projects-page" ref={projectsRef}>
       <div className="flex flex-col h-full pt-12">
         <p className="text-white text-7xl text-center">Recent Works</p>
         <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center">

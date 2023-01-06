@@ -7,20 +7,22 @@ import Projects from './Projects'
 import Contact from './Contact'
 
 function App() {
-  const scrollToRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
 
-  const executeScroll = () => {
-    // Scroll to the element
-    scrollToRef.current!.scrollIntoView({ behavior: 'smooth' });
+  const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+    ref.current!.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <div className="App overflow-x-hidden">
-      <Sidebar />
-      <HomePage executeScroll={executeScroll}/>
-      <About scrollToRef={scrollToRef}/>
-      <Projects />
-      <Contact />
+      <Sidebar scrollToRef={scrollToRef} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>
+      <HomePage scrollToRef={scrollToRef} homeRef={homeRef} aboutRef={aboutRef}/>
+      <About aboutRef={aboutRef}/>
+      <Projects projectsRef={projectsRef}/>
+      <Contact contactRef={contactRef}/>
     </div>
   )
 }

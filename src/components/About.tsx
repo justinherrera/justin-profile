@@ -16,13 +16,13 @@ const ArrowDirection = ({ state, id }: { state: number | null, id: number} ) => 
 }
 
 interface AboutProps {
-  scrollToRef: RefObject<HTMLDivElement>
+  aboutRef: RefObject<HTMLDivElement>
 }
 
-const About = ({ scrollToRef }: AboutProps) => {
+const About = ({ aboutRef }: AboutProps) => {
   const [accordionID, setAccordionID] = useState<number | null>(null)
   return (
-    <div className="bg-white px-4 md:pl-20 pt-20 pb-10 flex flex-col md:flex-row md:h-auto lg:h-auto w-[100vw]" ref={scrollToRef}>
+    <div className="bg-white px-4 md:pl-20 pt-20 pb-10 flex flex-col md:flex-row md:h-auto lg:h-auto w-[100vw]" id="about-page" ref={aboutRef}>
       <div className="h-auto w-full md:w-[40vw] pr-4">
         <p className="text-7xl text-[#191919] about-me">About Me?</p>
         <small className="text-[#191919] mt-2 text-lg">It was 5 years ago when I started to learn how to code. I am currently a <span className="text-white bg-[#191919]">Nodejs Developer at Questronix</span>, working with a team of backend and mobile developers for product development at Union Digital. I have over 4 years of industry experience, and have been part of design and development projects. I specialize in <span className="text-white bg-[#191919]">React, Node and Tailwind.</span> <br /> Here are some of my working experiences:
