@@ -1,4 +1,5 @@
 import { RefObject } from 'react';
+import calling from '../assets/calling.svg'
 
 interface ContactProps {
   contactRef?: RefObject<HTMLDivElement>
@@ -26,8 +27,8 @@ const Contact = ({ contactRef }: ContactProps) => {
           </div>
           <button className="p-2 mt-6 bg-[#191919] text-white rounded hover:bg-white hover:text-[#191919] hover:border-2 hover:border-[#191919]">Submit</button>
         </div>
-        <div className="basis-1/2 border-4 rounded p-8">
-
+        <div className="basis-1/2 p-8 hidden md:block">
+          <img src={calling} height={300} width={600} className="mx-auto" />
         </div>
       </div>
     </div>

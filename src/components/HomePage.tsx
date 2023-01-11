@@ -15,10 +15,10 @@ const HomePage = ({ scrollToRef, homeRef, aboutRef }: HomeProps) => {
         <p className="text-7xl text-white text-center">Hello. I'm Justin 👨‍💻</p>
         <small className="text-white mt-2 text-lg text-center">JavaScript Developer and Cloud Newbie</small>
         <div className="flex flex-row space-x-4 mt-4">
-          <SocialIcon url="https://linkedin.com/in/justin-mohses-herrera-a8316215a/" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110 " />
-          <SocialIcon url="https://twitter.com/Herrera_Jus" network="twitter" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
-          <SocialIcon url="https://instagram.com/herrera_jus/" network="instagram" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
-          <SocialIcon url="https://github.com/justinherrera" network="github" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
+          <SocialIcon url="https://linkedin.com/in/justin-mohses-herrera-a8316215a/" target="_blank" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110 " />
+          <SocialIcon url="https://twitter.com/Herrera_Jus" network="twitter" target="_blank" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
+          <SocialIcon url="https://instagram.com/herrera_jus/" network="instagram" target="_blank" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
+          <SocialIcon url="https://github.com/justinherrera" network="github" target="_blank" bgColor="#ffffff" style={{ height: 30, width: 30 }} className="cursor-pointer hover:scale-110" />
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#ffffff" className="w-8 h-8 mr-4 animate-bounce absolute bottom-24 left-[50%] cursor-pointer" onClick={() => scrollToRef(aboutRef)}>
