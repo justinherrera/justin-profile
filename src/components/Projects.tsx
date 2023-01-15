@@ -12,7 +12,7 @@ const Projects = ({ projectsRef }: ProjectsProps) => {
       <div className="flex flex-col h-full">
         <p className="text-white text-7xl text-center">Recent Works</p>
         <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center w-[100%] flex-wrap">
-          {[1,2,3,4].map((element) => (
+          {/* {[1,2,3,4].map((element) => (
             <div className="works-div flex flex-row mt-10 cursor-pointer transition duration-700 ease-in-out hover:scale-110 text-center md:w-1/3">
               <div className="border-1 p-4 border border-white rounded">
                 <p className="text-2xl text-white">Customer Feedback App</p>
@@ -30,7 +30,8 @@ const Projects = ({ projectsRef }: ProjectsProps) => {
 
               </div>
             </div>
-          ))}
+          ))} */}
+          <p className="text-white mt-10">Working in Progress...</p>
         </div>
       
       </div>

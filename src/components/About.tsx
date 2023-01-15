@@ -51,7 +51,7 @@ const About = ({ aboutRef }: AboutProps) => {
               </div>
             </div>
             <ol className="list-decimal list-inside">
-              <li>Developed features in payments and transfers</li>
+              <li>Developed features in payments and transfers service</li>
               <li>Created a backend API for Digital Assets Exchange Project</li>
               <li>Integrated external API for trading features</li>
               <li>Used AWS features to cater backend needs</li>

@@ -12,6 +12,9 @@
   .menu-item {
     @apply text-2xl font-sans py-6; 
   }
+  .contact-input {
+    @apply block p-2 border rounded border-[#191919] w-[100%]
+  }
 }
 
 /* width */

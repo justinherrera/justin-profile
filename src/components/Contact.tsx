@@ -61,21 +61,21 @@ const Contact = ({ contactRef }: ContactProps) => {
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-2">
               <label>Name:</label>
-              <input type="text" className="block p-2 border rounded border-[#191919] w-[100%]" name="from_name" value={inputForm.name} onChange={(e) => setInputForm({
+              <input type="text" className="contact-input" name="from_name" value={inputForm.name} onChange={(e) => setInputForm({
                 ...inputForm,
                 name: e.target.value
               })} required/>
             </div>
             <div className="mb-2">
               <label>Email:</label>
-              <input type="email" className="block p-2 border rounded border-[#191919] w-[100%]" name="from_email"  value={inputForm.email} onChange={(e) => setInputForm({
+              <input type="email" className="contact-input" name="from_email"  value={inputForm.email} onChange={(e) => setInputForm({
                 ...inputForm,
                 email: e.target.value
               })} required/>
             </div>
             <div className="">
               <label>Message:</label>
-              <textarea name="message" className="block p-2 border rounded border-[#191919] w-[100%]" value={inputForm.message} onChange={(e) => setInputForm({
+              <textarea name="message" className="contact-input" value={inputForm.message} onChange={(e) => setInputForm({
                 ...inputForm,
                 message: e.target.value
               })} required/>
