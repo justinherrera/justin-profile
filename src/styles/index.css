@@ -15,6 +15,9 @@
   .contact-input {
     @apply block p-2 border rounded border-[#191919] w-[100%]
   }
+  .about-skills-div {
+    @apply flex flex-col space-y-1 mb-4 md:mb-0 mx-4 md:mx-0
+  }
 }
 
 /* width */

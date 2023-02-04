@@ -34,7 +34,7 @@ const About = ({ aboutRef }: AboutProps) => {
             <ArrowDirection state={accordionID} id={1} />
 
           </button>
-          <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 1) ? 'active-accordion h-[50vh] lg:h-[30vh]' : ''}`}>
+          <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 1) ? 'active-accordion h-[65vh] lg:h-[30vh]' : ''}`}>
             <div className="flex flex-row mb-2 space-x-2">
               <div className="flex flex-row mb-2 space-x-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -79,7 +79,7 @@ const About = ({ aboutRef }: AboutProps) => {
             <ArrowDirection state={accordionID} id={2} />
             </button>
             
-            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 2) ? 'active-accordion h-[48vh] lg:h-[28vh]' : ''}`}>
+            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 2) ? 'active-accordion h-[53vh] lg:h-[28vh]' : ''}`}>
               <div className="flex flex-row mb-2 space-x-2">
                 <div className="flex flex-row mb-2 space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -122,7 +122,7 @@ const About = ({ aboutRef }: AboutProps) => {
             <ArrowDirection state={accordionID} id={3} />
             </button>
             
-            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 3) ? 'active-accordion h-[36vh] lg:h-[24vh]' : ''}`}>
+            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 3) ? 'active-accordion h-[50vh] lg:h-[24vh]' : ''}`}>
               <div className="flex flex-row mb-2 space-x-2">
                 <div className="flex flex-row mb-2 space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -160,7 +160,7 @@ const About = ({ aboutRef }: AboutProps) => {
             <ArrowDirection state={accordionID} id={4} />
             </button>
             
-            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 4) ? 'active-accordion h-[36vh] lg:h-[26vh]' : ''}`}>
+            <div className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${(accordionID === 4) ? 'active-accordion h-[42vh] lg:h-[26vh]' : ''}`}>
               <div className="flex flex-row mb-2 space-x-2">
                 <div className="flex flex-row mb-2 space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -199,8 +199,67 @@ const About = ({ aboutRef }: AboutProps) => {
             </div>
         </div> 
       </div>
-      <div className="w-full md:w-[60vw] pr-4 pt-10">
-        <img src={coding} height={300} width={600} className="mx-auto" />
+      <div className="w-full md:w-[60vw] px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap">
+        <p className="text-[#191919] my-8 text-lg font-semibold border-[#191919] border-b-2">Skills</p>
+        {/* <img src={coding} height={300} width={600} className="mx-auto" /> */}
+        <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
+          <div className="about-skills-div">
+            <i className="devicon-nodejs-plain text-[3rem] mr-4"></i>
+            <small className="text-left ml-1">Nodejs</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-react-original text-[3rem] mr-4"></i>
+            <small className="text-left ml-1">React</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-postgresql-plain text-[3rem] mr-4"></i>
+            <small className="text-left ml-1">Postgre</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-mongodb-plain text-[3rem]"></i>
+            <small className="text-left ml-1">Mongo</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-amazonwebservices-original text-[3rem]"></i>
+            <small className="text-left ml-1">AWS</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-tailwindcss-plain text-[3rem]"></i>
+            <small className="text-center">Tailwind</small>
+          </div>
+        </div>
+        <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
+          <div className="about-skills-div">
+            <i className="devicon-sequelize-plain text-[3rem]"></i>
+            <small className="text-center">Sequelize</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-apachekafka-original text-[3rem]"></i>
+            <small className="text-left ml-1">Kafka</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-express-original text-[3rem]"></i>
+            <small className="text-left ml-1">Express</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-javascript-plain text-[3rem]"></i>
+            <small className="text-center">JavaScript</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-css3-plain text-[3rem]"></i>
+            <small className="text-center">CSS</small>
+          </div>
+          <div className="about-skills-div">
+            <i className="devicon-git-plain text-[3rem]"></i>
+            <small className="text-center">Git</small>
+          </div>
+        </div>
+        <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
+          <div className="about-skills-div">
+            <i className="devicon-jest-plain text-[3rem]"></i>
+            <small className="text-center">Jest</small>
+          </div>
+        </div>
       </div>
     </div>
   )
