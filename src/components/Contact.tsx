@@ -52,7 +52,7 @@ const Contact = ({ contactRef }: ContactProps) => {
   }
 
   return (
-    <div className="bg-white h-auto py-20 pl-10 md:pl-20 pr-10 md:pr-20" id="contact-page" ref={contactRef}>
+    <div className="bg-white h-screen md:h-auto py-20 pl-10 md:pl-20 pr-10 md:pr-20" id="contact-page" ref={contactRef}>
       <ToastContainer />
       <p className="text-7xl text-center">Contact Me</p>
       <p className="text-center">Let's work together or drop me a message and say hello</p>
