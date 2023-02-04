@@ -8,7 +8,7 @@ interface ProjectsProps {
 
 const Projects = ({ projectsRef }: ProjectsProps) => {
   return (
-    <div className="bg-[#191919] h-auto md:h-screen w-[100vw] py-12" id="projects-page" ref={projectsRef}>
+    <div className="bg-[#191919] h-auto md:h-auto w-[100vw] py-12" id="projects-page" ref={projectsRef}>
       <div className="flex flex-col h-full">
         <p className="text-white text-7xl text-center">Recent Works</p>
         <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center w-[100%] flex-wrap">
