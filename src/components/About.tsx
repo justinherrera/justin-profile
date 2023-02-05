@@ -208,6 +208,10 @@ const About = ({ aboutRef }: AboutProps) => {
             <small className="text-left ml-1">Nodejs</small>
           </div>
           <div className="about-skills-div">
+            <i className="devicon-typescript-plain text-[3rem] mr-4"></i>
+            <small className="text-left">TypeScript</small>
+          </div>
+          <div className="about-skills-div">
             <i className="devicon-react-original text-[3rem] mr-4"></i>
             <small className="text-left ml-1">React</small>
           </div>
