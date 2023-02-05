@@ -199,7 +199,7 @@ const About = ({ aboutRef }: AboutProps) => {
             </div>
         </div> 
       </div>
-      <div className="w-full md:w-[60vw] px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap">
+      <div className="md:h-10 w-full md:w-[60vw] px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap">
         <p className="text-[#191919] my-8 text-lg font-semibold border-[#191919] border-b-2">Skills</p>
         {/* <img src={coding} height={300} width={600} className="mx-auto" /> */}
         <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
