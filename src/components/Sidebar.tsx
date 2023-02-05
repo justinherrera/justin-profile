@@ -12,8 +12,8 @@ interface SidebarProps {
 
 const Sidebar = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }: SidebarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const closedMenu = (!isMenuOpen) ? 'w-80  w' : 'w-0 pl-0'
-  const menuIcon = (!isMenuOpen) ? 'M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3' : 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
+  const closedMenu = (isMenuOpen) ? 'w-80  w' : 'w-0 pl-0'
+  const menuIcon = (isMenuOpen) ? 'M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3' : 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
 
   const icons = {
     home: 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
@@ -34,7 +34,7 @@ const Sidebar = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }: Si
   ]
   return (
     <div className={`sidebar-component fixed top-0 right-0 h-screen z-10 shadow-2xl ${closedMenu} bg-[#EAEAEA]`}>
-      <Svg src={menuIcon} className="w-10 h-8 fixed top-10 right-10 cursor-pointer" stroke={!isMenuOpen ? '#181D31' : '#EAEAEA'} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
+      <Svg src={menuIcon} className="w-10 h-8 fixed top-10 right-10 cursor-pointer" stroke={isMenuOpen ? '#181D31' : '#EAEAEA'} onClick={() => setIsMenuOpen(!isMenuOpen)}/>
       <div className="menu-div flex flex-col justify-center pt-20  h-full">
         {sidebarElements.map(([title, url, path, htmlRef]) => {
           console.log(htmlRef)
