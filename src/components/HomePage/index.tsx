@@ -53,6 +53,7 @@ const HomePage: React.FunctionComponent<HomeProps> = ({
       className="w-8 h-8 mr-4 animate-bounce absolute bottom-24 left-[50%] cursor-pointer"
       strokeWidth={1.5}
       stroke="#ffffff"
+      onClick={() => scrollToRef(aboutRef)}
     />
   </div>
 );
