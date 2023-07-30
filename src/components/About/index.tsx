@@ -1,5 +1,5 @@
 import { RefObject } from "react";
-import "../styles/About.css";
+import "../../styles/About.css";
 import coding from "../assets/coding.svg";
 import Accordion from "./Accordion";
 import Skills from "./Skills";

@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
-import '../styles/App.css'
-import Sidebar from './Sidebar'
-import HomePage from './HomePage'
-import About from './About'
-import Projects from './Projects'
-import Contact from './Contact'
+import React, { useRef } from "react";
+import "../styles/App.css";
+import Sidebar from "./Sidebar";
+import HomePage from "./HomePage";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact/Contact";
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -13,18 +13,28 @@ function App() {
   const contactRef = useRef<HTMLDivElement>(null);
 
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current!.scrollIntoView({ behavior: 'smooth' });
+    ref.current!.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="App overflow-x-hidden">
-      <Sidebar scrollToRef={scrollToRef} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>
-      <HomePage scrollToRef={scrollToRef} homeRef={homeRef} aboutRef={aboutRef}/>
-      <About aboutRef={aboutRef}/>
-      <Projects projectsRef={projectsRef}/>
-      <Contact contactRef={contactRef}/>
+      <Sidebar
+        scrollToRef={scrollToRef}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
+      <HomePage
+        scrollToRef={scrollToRef}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+      />
+      <About aboutRef={aboutRef} />
+      <Projects projectsRef={projectsRef} />
+      <Contact contactRef={contactRef} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
