@@ -4,7 +4,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 type ArrowDirectionProps = {
-  state: number | null;
+  state: number | boolean;
   id: number;
 };
 

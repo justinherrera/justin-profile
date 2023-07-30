@@ -29,7 +29,7 @@ const About: React.FunctionComponent<{
           responsive interfaces.
           <br /> Here are some of my working experiences:
         </small>
-        <div>
+        <div className="mt-2">
           <Accordion />
         </div>
       </div>
