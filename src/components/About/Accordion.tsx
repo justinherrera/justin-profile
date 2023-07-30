@@ -4,7 +4,7 @@ import AccordionItem from "./AccordionItem";
 
 const Accordion = () => {
   console.log("rendering");
-  const [accordionID, setAccordionID] = useState<number | null>(null);
+  const [accordionID, setAccordionID] = useState<number>(0);
 
   const accordionData = [
     {

@@ -8,8 +8,8 @@ type AccordionItemProps = {
   subtitle: string;
   content: string[];
   skills: string[];
-  accordionID: number | null;
-  setAccordionID: React.Dispatch<React.SetStateAction<number | null>>;
+  accordionID: number;
+  setAccordionID: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
@@ -33,7 +33,7 @@ const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
           if (accordionID !== id) {
             setAccordionID(id);
           } else {
-            setAccordionID(null);
+            setAccordionID(0);
           }
         }}
       >
