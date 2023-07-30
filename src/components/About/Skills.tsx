@@ -30,7 +30,7 @@ const Skills = () => {
       {skillsData.map((skill, index) => (
         <div key={index} className="about-skills-div">
           <i className={`${skill.icon} text-[3rem]`} />
-          <small className="text-center">{skill.text}</small>
+          <small className="text-center ">{skill.text}</small>
         </div>
       ))}
     </div>
