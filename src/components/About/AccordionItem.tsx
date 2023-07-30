@@ -44,7 +44,7 @@ const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
       </button>
       <div
         className={`pl-4 pt-4 about-accordion overflow-hidden text-[#191919] ${
-          isOpen ? "active-accordion h-[65vh] lg:h-auto" : ""
+          isOpen ? "active-accordion h-auto" : ""
         }`}
       >
         <div className="flex flex-row mb-2 space-x-2">
