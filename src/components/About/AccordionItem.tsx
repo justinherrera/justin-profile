@@ -26,7 +26,7 @@ const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
   return (
     <div className="w-auto">
       <button
-        className={`w-full py-2 text-left border border-black pl-4 accordion-btn flex flex-row justify-between group  ${
+        className={`w-full py-2 text-left border rounded-lg border-black pl-4 accordion-btn flex flex-row justify-between group  ${
           isOpen ? "bg-[#191919]" : ""
         }`}
         onClick={() => {

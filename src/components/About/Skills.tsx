@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface Skill {
   icon: string;
@@ -25,11 +25,32 @@ const skillsData: Skill[] = [
 ];
 
 const Skills = () => {
+  const [isColoredArray, setIsColoredArray] = useState<boolean[]>(
+    Array(skillsData.length).fill(false)
+  );
+
+  const handleMouseEnter = (index: number) => {
+    const updatedArray = [...isColoredArray];
+    updatedArray[index] = true;
+    setIsColoredArray(updatedArray);
+  };
+
+  const handleMouseLeave = (index: number) => {
+    const updatedArray = [...isColoredArray];
+    updatedArray[index] = false;
+    setIsColoredArray(updatedArray);
+  };
   return (
     <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
       {skillsData.map((skill, index) => (
-        <div key={index} className="about-skills-div">
-          <i className={`${skill.icon} text-[3rem]`} />
+        <div key={skill.icon} className="about-skills-div">
+          <i
+            className={`${skill.icon} ${
+              isColoredArray[index] ? "colored" : ""
+            } text-[3rem]`}
+            onMouseEnter={(e) => handleMouseEnter(index)}
+            onMouseLeave={(e) => handleMouseLeave(index)}
+          />
           <small className="text-center ">{skill.text}</small>
         </div>
       ))}
