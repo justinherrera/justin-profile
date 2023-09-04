@@ -8,7 +8,7 @@ type ArrowDirectionProps = {
   id: number;
 };
 
-const svgStyle = "h-6 w-6 mr-4 group-hover:animate-bounce";
+const svgStyle = "h-6 w-6 mr-4";
 
 export const ArrowDirection: React.FunctionComponent<ArrowDirectionProps> = ({
   state,

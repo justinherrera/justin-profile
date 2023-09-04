@@ -61,11 +61,13 @@ const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
         </ol>
         <div className="flex flex-row my-4">
           <span className="mr-4 underline underline-offset-8">
-            Skills Used:{" "}
+            Skills Used:
           </span>
           <div className="flex flex-row space-x-2">
             {skills.map((skill) => (
-              <i key={skill} className={`devicon-${skill}-plain`}></i>
+              <small className="border px-2 border-[#191919] rounded-lg">
+                {skill}
+              </small>
             ))}
           </div>
         </div>
