@@ -59,13 +59,13 @@ const AccordionItem: React.FunctionComponent<AccordionItemProps> = ({
             <li key={item}>{item}</li>
           ))}
         </ol>
-        <div className="flex flex-row my-4">
-          <span className="mr-4 underline underline-offset-8">
+        <div className="flex flex-col md:flex-row my-4">
+          <span className="mr-4 mb-2 md:mb-0 underline underline-offset-8">
             Skills Used:
           </span>
-          <div className="flex flex-row space-x-2">
+          <div className="flex flex-row space-x-2 flex-wrap">
             {skills.map((skill) => (
-              <small className="border px-2 border-[#191919] rounded-lg">
+              <small className="mb-2 md:mb-0 border px-2 border-[#191919] rounded-lg ">
                 {skill}
               </small>
             ))}
