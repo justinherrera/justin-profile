@@ -1,16 +1,22 @@
-import React from 'react'
-import { RefObject } from 'react';
-import mj_src from '../assets/project_1.png'
+import React from "react";
+import { RefObject } from "react";
+import mj_src from "../assets/project_1.png";
 
 interface ProjectsProps {
-  projectsRef: RefObject<HTMLDivElement>
+  projectsRef: RefObject<HTMLDivElement>;
 }
 
 const Projects = ({ projectsRef }: ProjectsProps) => {
   return (
-    <div className="bg-[#191919] h-auto md:h-auto w-[100vw] py-12" id="projects-page" ref={projectsRef}>
+    <div
+      className="bg-[#191919] h-auto md:h-auto w-[100vw] py-12"
+      id="projects-page"
+      ref={projectsRef}
+    >
       <div className="flex flex-col h-full">
-        <p className="text-white text-7xl text-center">Recent Works</p>
+        <p className="text-white text-6xl md:text-7xl text-center">
+          Recent Works
+        </p>
         <div className="flex flex-col md:flex-row md:space-x-10 justify-center items-center w-[100%] flex-wrap">
           {/* {[1,2,3,4].map((element) => (
             <div className="works-div flex flex-row mt-10 cursor-pointer transition duration-700 ease-in-out hover:scale-110 text-center md:w-1/3">
@@ -33,10 +39,9 @@ const Projects = ({ projectsRef }: ProjectsProps) => {
           ))} */}
           <p className="text-white mt-10">Working in Progress...</p>
         </div>
-      
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

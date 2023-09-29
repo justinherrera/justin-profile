@@ -14,7 +14,9 @@ const About: React.FunctionComponent<{
       ref={aboutRef}
     >
       <div className="h-auto w-full md:w-full pr-4">
-        <p className="text-7xl text-[#191919] about-me">About Me?</p>
+        <p className="text-6xl md:text-7xl text-[#191919] about-me">
+          About Me?
+        </p>
         <small className="text-[#191919] mt-2 text-lg">
           I am a passionate developer based in Cavite, Philippines, specializing
           in building web applications using the MERN (MongoDB, Express, React,

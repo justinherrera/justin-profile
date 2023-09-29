@@ -15,7 +15,7 @@ const Contact: React.FunctionComponent<ContactProps> = ({ contactRef }) => {
       id="contact-page"
       ref={contactRef}
     >
-      <p className="text-7xl text-center">Contact Me</p>
+      <p className="text-6xl md:text-7xl text-center">Contact Me</p>
       <p className="text-center">
         Let's work together or drop me a message and say hello
       </p>
