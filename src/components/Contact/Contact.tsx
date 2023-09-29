@@ -11,7 +11,7 @@ interface ContactProps {
 const Contact: React.FunctionComponent<ContactProps> = ({ contactRef }) => {
   return (
     <div
-      className="bg-white h-screen md:h-auto py-20 pl-10 md:pl-20 pr-10 md:pr-20"
+      className="bg-white h-screen md:h-full py-20 pl-10 md:pl-20 pr-10 md:pr-20"
       id="contact-page"
       ref={contactRef}
     >
@@ -20,7 +20,7 @@ const Contact: React.FunctionComponent<ContactProps> = ({ contactRef }) => {
         Let's work together or drop me a message and say hello
       </p>
       <div className="pt-10 flex flex-col md:flex-row justify-center">
-        <div className="basis-1/2 md:p-8">
+        <div className="basis-full lg:basis-1/2 md:p-8">
           <ContactForm />
         </div>
       </div>

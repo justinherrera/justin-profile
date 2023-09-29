@@ -9,11 +9,11 @@ const About: React.FunctionComponent<{
 }> = ({ aboutRef }) => {
   return (
     <div
-      className="bg-white px-4 md:pl-20 pt-20 pb-10 flex flex-col md:flex-row md:h-auto lg:h-auto w-[100vw]"
+      className="bg-white px-4 lg:pl-20 pt-20 pb-10 flex flex-col md:flex-col lg:flex-row md:h-auto lg:h-auto w-[100vw]"
       id="about-page"
       ref={aboutRef}
     >
-      <div className="h-auto w-full md:w-[40vw] pr-4">
+      <div className="h-auto w-full md:w-full pr-4">
         <p className="text-7xl text-[#191919] about-me">About Me?</p>
         <small className="text-[#191919] mt-2 text-lg">
           I am a passionate developer based in Cavite, Philippines, specializing
@@ -33,9 +33,9 @@ const About: React.FunctionComponent<{
           <Accordion />
         </div>
       </div>
-      <div className="md:h-10 w-full md:w-[60vw] px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap">
-        <p className="text-[#191919] my-8 text-lg font-semibold border-[#191919] border-b-2">
-          Skills
+      <div className="md:h-full w-full md:w-full px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap justify-center">
+        <p className="text-[#191919] my-8 text-2xl font-semibold border-[#191919]  ">
+          Technologies I work with
         </p>
         {/* <img src={coding} height={300} width={600} className="mx-auto" /> */}
         <Skills />

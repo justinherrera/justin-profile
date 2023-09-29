@@ -41,13 +41,13 @@ const Skills = () => {
     setIsColoredArray(updatedArray);
   };
   return (
-    <div className="w-full flex flex-row justify-center md:space-x-12 flex-wrap mb-6 md:mb-0">
+    <div className="w-full flex flex-row justify-center flex-wrap mb-6 md:mb-0">
       {skillsData.map((skill, index) => (
-        <div key={skill.icon} className="about-skills-div">
+        <div key={skill.icon} className="about-skills-div p-4">
           <i
             className={`${skill.icon} ${
               isColoredArray[index] ? "colored" : ""
-            } text-[3rem]`}
+            } text-[4rem]`}
             onMouseEnter={(e) => handleMouseEnter(index)}
             onMouseLeave={(e) => handleMouseLeave(index)}
           />
