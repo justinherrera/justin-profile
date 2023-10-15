@@ -20,9 +20,9 @@ const About: React.FunctionComponent<{
         <small className="text-[#191919] mt-2 text-lg">
           I am a passionate developer based in Cavite, Philippines, specializing
           in building web applications using the MERN (MongoDB, Express, React,
-          Node.js) stack. Currently, I am working as a{" "}
+          Node.js) stack. Recently, I was working as a{" "}
           <span className="text-white bg-[#191919]">
-            Node.js Developer at CoDev
+            MERN Stack Developer at CoDev
           </span>
           , where I have been involved in both design and development projects.
           With over 4 years of industry experience, I have honed my skills in
