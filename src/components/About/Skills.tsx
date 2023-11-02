@@ -22,6 +22,8 @@ const skillsData: Skill[] = [
   { icon: "devicon-css3-plain", text: "CSS" },
   { icon: "devicon-git-plain", text: "Git" },
   { icon: "devicon-jest-plain", text: "Jest" },
+  { icon: "devicon-dart-plain", text: "Dart" },
+  { icon: "devicon-flutter-plain", text: "Flutter" },
 ];
 
 const Skills = () => {
