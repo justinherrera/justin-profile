@@ -20,7 +20,7 @@ const About: React.FunctionComponent<{
         <small className="text-[#191919] mt-2 text-lg">
           I am a passionate developer based in Laguna, Philippines, specializing
           in building web applications using the MERN (MongoDB, Express, React,
-          Node.js) stack. Recently, I am currently working as an offshore{" "}
+          Node.js) stack. I am currently working as an offshore{" "}
           <span className="text-white bg-[#191919]">
             Nodejs Developer at Comcast
           </span>
