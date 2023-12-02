@@ -18,17 +18,16 @@ const About: React.FunctionComponent<{
           About Me?
         </p>
         <small className="text-[#191919] mt-2 text-lg">
-          I am a passionate developer based in Cavite, Philippines, specializing
+          I am a passionate developer based in Laguna, Philippines, specializing
           in building web applications using the MERN (MongoDB, Express, React,
-          Node.js) stack. Recently, I was working as a{" "}
+          Node.js) stack. Recently, I am currently working as an{" "}
           <span className="text-white bg-[#191919]">
-            MERN Stack Developer at CoDev
+            Offshore Nodejs Developer at Comcast
           </span>
-          , where I have been involved in both design and development projects.
-          With over 4 years of industry experience, I have honed my skills in
-          crafting efficient and user-friendly solutions. My expertise lies in
-          leveraging React, Node.js, and Tailwind CSS to create modern and
-          responsive interfaces.
+          , where I am involve in backend development. With over 4 years of
+          industry experience, I have honed my skills in crafting efficient and
+          user-friendly solutions. My expertise lies in leveraging React,
+          Node.js, and Tailwind CSS to create modern and responsive interfaces.
           <br /> Here are some of my working experiences:
         </small>
         <div className="mt-2">
