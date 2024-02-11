@@ -12,7 +12,7 @@ const skillsData: Skill[] = [
   { icon: "devicon-redux-original", text: "Redux" },
   { icon: "devicon-postgresql-plain", text: "Postgre" },
   { icon: "devicon-mongodb-plain", text: "Mongo" },
-  { icon: "devicon-amazonwebservices-original", text: "AWS" },
+  { icon: "devicon-amazonwebservices-plain-wordmark", text: "AWS" },
   { icon: "devicon-tailwindcss-plain", text: "Tailwind" },
   { icon: "devicon-sequelize-plain", text: "Sequelize" },
   { icon: "devicon-apachekafka-original", text: "Kafka" },
@@ -24,7 +24,8 @@ const skillsData: Skill[] = [
   { icon: "devicon-jest-plain", text: "Jest" },
   { icon: "devicon-dart-plain", text: "Dart" },
   { icon: "devicon-flutter-plain", text: "Flutter" },
-  { icon: "devicon-firebase-plain", text: "Firebase" },
+  { icon: "devicon-denojs-original", text: "Deno" },
+  { icon: "devicon-supabase-plain", text: "Supabase" },
 ];
 
 const Skills = () => {
