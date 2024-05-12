@@ -9,6 +9,40 @@ const Accordion = () => {
   const accordionData = [
     {
       id: 1,
+      title: "Pointwest Squad Inc.",
+      subtitle: "Nodejs Developer",
+      content: [
+        "Assigned with developing an enhanced version of an existing software module to improve functionality and user experience.",
+        "Designed and implemented a unit test for a specific module, ensuring code reliability and robustness.",
+        "Refactored the error handling mechanisms in the backend to improve error detection and response efficiency.",
+        "Assigned to develop a new feature requiring frontend integration; additionally authored detailed Swagger documentation for a specific backend API to facilitate easier integration and understanding."
+      ],
+      skills: [
+        "MongoDB",
+        "Express",
+        "Mocha",
+        "Nodejs",
+      ],
+    },
+    {
+      id: 2,
+      title: "Codev",
+      subtitle: "Full-Stack Developer",
+      content: [
+        "Optimized the backend to reduce loading times by implementing efficient fetching of multiple schemas simultaneously.",
+        "Assigned to troubleshoot and resolve issues in the frontend for the company's prior project, focusing on enhancing stability and user experience.",
+        "Developed a new backend API designed to streamline the retrieval of essential schemas, significantly reducing data overhead by avoiding unnecessary fetches.",
+        "Developed a backend API that populates the assets schema automatically when products are loaded, enhancing data handling efficiency and system responsiveness.",
+      ],
+      skills: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Nodejs",
+      ],
+    },
+    {
+      id: 3,
       title: "Questronix Corporation",
       subtitle: "Nodejs Developer",
       content: [
@@ -31,7 +65,7 @@ const Accordion = () => {
       ],
     },
     {
-      id: 2,
+      id: 5,
       title: "The Investor's Podcast",
       subtitle: "Web Developer",
       content: [
@@ -44,7 +78,7 @@ const Accordion = () => {
       skills: ["React", "Redux", "Nodejs", "Express", "MongoDB", "Sass"],
     },
     {
-      id: 3,
+      id: 6,
       title: "Coinpass Ltd.",
       subtitle: "JavaScript Developer",
       content: [
@@ -56,7 +90,7 @@ const Accordion = () => {
       skills: ["React", "AWS", "CSS"],
     },
     {
-      id: 4,
+      id: 7,
       title: "Gleent Inc.",
       subtitle: "Backend Developer",
       content: [

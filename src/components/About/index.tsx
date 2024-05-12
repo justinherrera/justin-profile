@@ -19,15 +19,13 @@ const About: React.FunctionComponent<{
         </p>
         <small className="text-[#191919] mt-2 text-lg">
           I am a passionate developer based in Laguna, Philippines, specializing
-          in building web applications using the MERN (MongoDB, Express, React,
-          Node.js) stack. I am currently working as an offshore{" "}
+          in building web applications using the JavaScript ecosystem. I am currently working as{" "}
           <span className="text-white bg-[#191919]">
-            Nodejs Developer at Comcast
+            Nodejs Developer at Pointwest Squad Inc.
           </span>
-          , where I am involve in backend development. With over 4 years of
+          , where I am involve in backend development. With over 5 years of
           industry experience, I have honed my skills in crafting efficient and
-          user-friendly solutions. My expertise lies in leveraging React,
-          Node.js, and Tailwind CSS to create modern and responsive interfaces.
+          user-friendly solutions.
           <br /> Here are some of my working experiences:
         </small>
         <div className="mt-2">
@@ -35,9 +33,9 @@ const About: React.FunctionComponent<{
         </div>
       </div>
       <div className="md:h-full w-full md:w-full px-2 md:px-14 pt-10 flex flex-col md:flex-row flex-wrap justify-center">
-        <p className="text-[#191919] my-8 text-2xl font-semibold border-[#191919]  ">
+        {/* <p className="text-[#191919] my-8 text-2xl font-semibold border-[#191919]  ">
           Technologies I work with
-        </p>
+        </p> */}
         {/* <img src={coding} height={300} width={600} className="mx-auto" /> */}
         <Skills />
       </div>
