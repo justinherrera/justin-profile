@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/Skill.css";
 
 interface Skill {
   icon: string;
@@ -27,9 +28,9 @@ const skillsData: Skill[] = [
   { icon: "devicon-prisma-original", text: "Prisma" },
   { icon: "devicon-apachekafka-original", text: "Kafka" },
   { icon: "devicon-jest-plain", text: "Jest" },
-  { icon: "devicon-vitest-plain", text: "Vitest" },
-  { icon: "devicon-dart-plain", text: "Dart" },
-  { icon: "devicon-flutter-plain", text: "Flutter" },
+  { icon: "devicon-digitalocean-plain", text: "Digital Ocean" },
+  { icon: "devicon-githubactions-plain", text: "Github Actions" },
+  { icon: "devicon-nginx-plain", text: "Nginx" },
 ];
 
 const Skills = () => {
@@ -59,7 +60,18 @@ const Skills = () => {
             onMouseEnter={(e) => handleMouseEnter(index)}
             onMouseLeave={(e) => handleMouseLeave(index)}
           />
-          <small className="text-center ">{skill.text}</small>
+         
+          {
+            skill.text.trim().split(/\s+/).length === 2 ? (
+              <>
+                <small className="text-center ">{skill.text.trim().split(/\s+/)[0]}</small>
+                <small className="text-center skill-last-word">{skill.text.trim().split(/\s+/)[1]}</small>
+              </>
+            ) :
+            <>
+             <small className="text-center">{skill.text}</small>
+            </>
+          }
         </div>
       ))}
     </div>
