@@ -20,7 +20,7 @@ const Contact: React.FunctionComponent<ContactProps> = ({ contactRef }) => {
         Let's work together or drop me a message and say hello
       </p>
       <div className="pt-10 flex flex-col md:flex-row justify-center">
-        <div className="basis-full lg:basis-1/2 md:p-8">
+        <div className="basis-full xl:basis-1/2 md:p-8">
           <ContactForm />
         </div>
       </div>

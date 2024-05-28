@@ -52,7 +52,7 @@ const Skills = () => {
   return (
     <div className="w-full flex flex-row justify-center flex-wrap mb-6 md:mb-0">
       {skillsData.map((skill, index) => (
-        <div key={skill.icon} className="about-skills-div p-4">
+        <div key={skill.icon} className="about-skills-div p-4 lg:p-0 xl:p-2 2xl-4">
           <i
             className={`${skill.icon} ${
               isColoredArray[index] ? "colored" : ""
