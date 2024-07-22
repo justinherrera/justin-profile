@@ -9,6 +9,7 @@ interface Skill {
 const skillsData: Skill[] = [
   { icon: "devicon-javascript-plain", text: "JavaScript" },
   { icon: "devicon-react-original", text: "React" },
+  { icon: "devicon-nextjs-plain", text: "Nextjs" },
   { icon: "devicon-redux-original", text: "Redux" },
   { icon: "devicon-vitejs-plain", text: "Vite" },
   { icon: "devicon-css3-plain", text: "CSS" },
@@ -31,6 +32,7 @@ const skillsData: Skill[] = [
   { icon: "devicon-digitalocean-plain", text: "Digital Ocean" },
   { icon: "devicon-githubactions-plain", text: "Github Actions" },
   { icon: "devicon-nginx-plain", text: "Nginx" },
+  
 ];
 
 const Skills = () => {
