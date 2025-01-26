@@ -18,6 +18,7 @@ const skillsData: Skill[] = [
   { icon: "devicon-denojs-original", text: "Deno" },
   { icon: "devicon-express-original", text: "Express" },
   { icon: "devicon-typescript-plain", text: "TypeScript" },
+  { icon: "devicon-nestjs-plain", text: "Nest" },
   { icon: "devicon-eslint-plain", text: "ESLint" },
   { icon: "devicon-git-plain", text: "Git" },
   { icon: "devicon-postgresql-plain", text: "Postgre" },
